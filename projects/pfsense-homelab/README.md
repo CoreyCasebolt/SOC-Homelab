@@ -1,4 +1,4 @@
-# pfSense SOC Homelab
+# :closed_lock_with_key: pfSense SOC Homelab 
 
 ## Purpose
 This project establishes a segmented firewall environment to support SOC-style monitoring, traffic analysis, and incident investigation.

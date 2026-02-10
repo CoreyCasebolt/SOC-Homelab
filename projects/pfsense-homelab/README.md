@@ -10,6 +10,12 @@ The lab is designed to generate realistic network telemetry that can be analyzed
 The homelab uses **pfSense** as a perimeter firewall to separate **WAN, LAN, and DMZ** networks.  
 This design mirrors common enterprise environments and provides controlled visibility into firewall activity, DNS resolution, and client behavior.
 
+### Environment Status
+
+The pfSense dashboard confirms interface status, gateway health, and active services such as DHCP and DNS resolution.
+
+![pfSense Dashboard](screenshots/pfsense-dashboard.png)
+
 Key objectives:
 - Enforce network segmentation
 - Control and observe traffic flows
@@ -19,6 +25,12 @@ Key objectives:
 ---
 
 ## 🧪 Lab Architecture
+
+### Interface Assignments
+
+pfSense interfaces are explicitly mapped to WAN, LAN, and DMZ networks to enforce segmentation and controlled traffic flow.
+
+![Interface Assignments](screenshots/pfsense-interface-assignments.png)
 
 ### Network Segmentation
 - **WAN**: Simulated external network (attack and internet access)
@@ -32,6 +44,13 @@ A topology diagram and configuration screenshots are available in the `screensho
 ---
 
 ## 🛡️ Firewall & Network Controls
+
+### LAN Interface Configuration
+
+The LAN interface is configured with a static IPv4 address to ensure consistent gateway behavior for internal clients.
+
+![LAN Interface Configuration](screenshots/pfsense-lan-interface.png)
+
 
 The firewall configuration enforces:
 - Default deny behavior on inbound WAN traffic
@@ -48,9 +67,19 @@ These controls allow the environment to safely simulate:
 
 ## 🌐 DNS & DHCP Services
 
-pfSense provides:
-- **DHCP** services for LAN clients to ensure consistent addressing
-- **DNS Resolver** (Unbound) for local name resolution and forwarding
+### DHCP Services
+
+pfSense provides DHCP services for LAN clients, enabling device attribution and visibility into client activity.
+
+![DHCP Server Configuration](screenshots/pfsense-dhcp-server-lan.png)
+
+
+### DNS Resolution
+
+The DNS Resolver (Unbound) handles local name resolution and forwards external queries, generating telemetry useful for detecting suspicious domains.
+
+![DNS Resolver Configuration](screenshots/dns-resolver.png)
+
 
 This enables analysis of:
 - DNS query behavior
@@ -60,6 +89,13 @@ This enables analysis of:
 ---
 
 ## 🧾 Validation & Verification
+
+### Client Connectivity Verification
+
+LAN clients successfully obtain network configuration, reach external resources, and resolve DNS through pfSense.
+
+![Client Connectivity Test](screenshots/windows10pro-ping-google.png)
+
 
 The environment was validated through:
 - Successful DHCP lease assignment to LAN clients

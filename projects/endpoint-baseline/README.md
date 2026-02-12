@@ -14,34 +14,4 @@ Establishing a known-good baseline allows for:
 
 This step mirrors real-world SOC practice where baseline system states are documented before introducing telemetry collection or security tooling.
 
----
-
-# Ubuntu Desktop Baseline
-
-## System Identity
-- Hostname documented
-- OS version and kernel version captured
-
-## Network Configuration
-- LAN IP address verified
-- Default gateway confirmed (pfSense LAN)
-- Routing table validated
-- DNS server verified
-
-## Connectivity Validation
-- Successful outbound connectivity
-- DNS resolution functioning correctly
-
-## Installed Packages
-- Default package list recorded
-- No Wazuh agent installed
-
-## Listening Services
-- Active listening ports documented
-- No additional monitoring services present
-
-## Firewall Status
-- UFW state recorded
-
-Screenshots available in: https://github.com/CoreyCasebolt/KernalCorey/tree/main/projects/endpoint-baseline/screenshots
 

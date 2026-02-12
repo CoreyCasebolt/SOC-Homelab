@@ -16,7 +16,7 @@ This step mirrors real-world SOC practice where baseline system states are docum
 
 ---
 
-# 🐧 Ubuntu Desktop Baseline
+# Ubuntu Desktop Baseline
 
 ## System Identity
 - Hostname documented

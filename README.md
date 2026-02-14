@@ -30,7 +30,7 @@ All projects are built in a controlled homelab environment and documented with c
 - Log generation for future SIEM ingestion
 
 📁 Project files:  
-`projects/pfsense-homelab`
+`projects/architecture/pfsense-homelab`
 
 ---
 

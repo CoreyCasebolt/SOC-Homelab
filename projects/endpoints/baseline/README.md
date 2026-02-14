@@ -43,7 +43,7 @@ This step mirrors real-world SOC practice where baseline system states are docum
 ## Firewall Status
 - UFW state recorded
 
-Screenshots available in: https://github.com/CoreyCasebolt/KernalCorey/tree/main/projects/endpoint-baseline/screenshots/ubuntu-desktop
+Screenshots available in: https://github.com/CoreyCasebolt/SOC-Homelab/tree/main/projects/endpoints/baseline/Screenshots/ubuntu-desktop
 
 ---
 
@@ -73,4 +73,4 @@ Screenshots available in: https://github.com/CoreyCasebolt/KernalCorey/tree/main
 ## Windows Defender Status
 - Protection state recorded
 
-Screenshots available in: https://github.com/CoreyCasebolt/KernalCorey/tree/main/projects/endpoint-baseline/screenshots/windows-10
+Screenshots available in: https://github.com/CoreyCasebolt/SOC-Homelab/tree/main/projects/endpoints/baseline/Screenshots/windows-10

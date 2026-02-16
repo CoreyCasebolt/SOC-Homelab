@@ -2,60 +2,70 @@
 
 ## Purpose
 
-This project documents the deployment of a Wazuh agent on a Windows 10 endpoint within my SOC homelab.
+This project documents deploying a Wazuh agent to a Windows 10 endpoint in my SOC homelab.
 
 The goal was to:
-
 - Connect the endpoint to the Wazuh manager
 - Confirm agent registration
-- Verify log ingestion into the SIEM
-
-This marks the first step in collecting endpoint telemetry.
+- Verify security event ingestion
 
 ---
 
 ## Pre-Deployment Verification
 
-Before installation:
+Before installing the agent, I confirmed it was not already present and verified connectivity to the Wazuh server.
 
-- Confirmed Wazuh service was not installed
-- Verified connectivity to Wazuh server
+### Service Check (No Agent Installed)
+![Pre-Agent Service Check](screenshots/windows10-pre-agent-service-check.png)
 
-Screenshots:
-- windows10-pre-agent-service-check.png
-- windows10-wazuh-connectivity-test.png
+### Connectivity Test to Wazuh Server
+![Connectivity Test](screenshots/windows10-wazuh-connectivity-test.png)
 
 ---
 
-## Installation
+## Agent Installation
 
-The agent installation command was generated from the Wazuh dashboard.
+The deployment command was generated from the Wazuh dashboard.
 
-Screenshots:
-- wazuh-dashboard-agent-deploy-page.png
-- wazuh-dashboard-agent-deploy-command.png
-- windows10-agent-install-output.png
+### Deployment Page
+![Deployment Page](screenshots/wazuh-dashboard-agent-deploy-page.png)
+
+### Generated Install Command
+![Deployment Command](screenshots/wazuh-dashboard-agent-deploy-command.png)
+
+### Installation Output
+![Install Output](screenshots/windows10-agent-install-output.png)
+
+---
+
+## Service Verification
 
 After installation, the Wazuh service was started and confirmed running.
 
-Screenshot:
-- windows10-agent-service-running.png
+![Agent Service Running](screenshots/windows10-agent-service-running.png)
 
 ---
 
-## Registration Confirmation
+## Agent Registration
 
-The agent successfully registered in the Wazuh dashboard and began sending events.
+The Windows 10 endpoint successfully registered in the Wazuh dashboard.
 
-Screenshots:
-- wazuh-dashboard-agent-registered.png
-- wazuh-dashboard-windows-initial-logs.png
+![Agent Registered](screenshots/wazuh-dashboard-agent-registered.png)
+
+---
+
+## Log Ingestion Verification
+
+Initial security events from the Windows endpoint were visible in Wazuh.
+
+![Initial Logs](screenshots/wazuh-dashboard-windows-initial-logs.png)
 
 ---
 
 ## Result
 
-The Windows 10 endpoint is now successfully integrated with Wazuh and generating security event telemetry.
+The Windows 10 endpoint is now fully integrated with Wazuh and generating telemetry.  
+This sets the foundation for future detection and investigation exercises.
 
 This sets the foundation for future detection and investigation exercises.
 

@@ -65,7 +65,6 @@ Initial security events from the Windows endpoint were visible in Wazuh.
 ## Result
 
 The Windows 10 endpoint is now fully integrated with Wazuh and generating telemetry.  
-This sets the foundation for future detection and investigation exercises.
 
 This sets the foundation for future detection and investigation exercises.
 

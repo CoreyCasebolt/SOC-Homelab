@@ -8,6 +8,12 @@ All work is performed in a controlled lab and documented with configuration deta
 
 ---
 
+## 🏗️ Lab Architecture
+
+![SOC Homelab Topology](projects/architecture/pfsense-homelab/screenshots/Topology.png)
+
+---
+
 ## 🛡️ Core Focus Areas
 
 - SIEM deployment and log analysis  

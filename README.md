@@ -11,7 +11,7 @@ All work is performed in a controlled lab and documented with configuration deta
 ## 🏗️ Lab Architecture
 
 ![SOC Homelab Topology](projects/architecture/pfsense-homelab/screenshots/Topology.png)
-
+This segmented environment supports attack simulation, traffic monitoring, endpoint logging, and SIEM-based detection testing.
 ---
 
 ## 🛡️ Core Focus Areas

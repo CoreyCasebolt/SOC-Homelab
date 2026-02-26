@@ -1,53 +1,78 @@
 # Corey Casebolt – Cybersecurity / SOC Portfolio
 
-Welcome to my cybersecurity portfolio.  
-This repository contains hands-on projects focused on **Security Operations Center (SOC)** skills, including monitoring, detection, investigation, and incident analysis.
+Welcome to my cybersecurity portfolio.
 
-All projects are built in a controlled homelab environment and documented with configuration details, screenshots, logs, and investigation notes to demonstrate real-world security workflows.
+This repository documents hands-on projects built in my SOC homelab environment, focused on developing practical skills in security monitoring, detection engineering, investigation, and troubleshooting.
 
----
-
-## 🛡️ Focus Areas
-
-- SIEM & log analysis
-- Alert triage and investigation
-- Network and host-based security monitoring
-- Firewall, DNS, and traffic analysis
-- Adversary simulation and detection
+All work is performed in a controlled lab and documented with configuration details, validation steps, screenshots, and investigation notes to reflect real-world SOC workflows.
 
 ---
 
-## 🧪 Featured Projects
+## 🛡️ Core Focus Areas
 
-### 🔐 pfSense SOC Homelab (Foundational)
-**Purpose:** Establish a segmented environment to support SOC-style monitoring and investigations.
+- SIEM deployment and log analysis  
+- Alert triage and threshold-based detection  
+- Host and network-based monitoring  
+- Firewall, DNS, and traffic inspection  
+- Adversary simulation and validation  
+- Structured troubleshooting and documentation  
+
+---
+
+## 🧪 Lab Structure
+
+Projects are organized by functional area to reflect how a real SOC environment is built and validated:
+
+- **Architecture** – Network design and environment setup  
+- **Endpoints** – System configuration and log generation  
+- **NSM / IDS** – Network security monitoring and intrusion detection  
+- **SIEM** – Log ingestion, detection logic, and alert configuration  
+
+Each section builds on the previous one, progressing from environment setup to detection and alert validation.
+
+---
+
+## 🔐 Featured Project – pfSense SOC Homelab (Foundational)
+
+**Objective:**  
+Establish a segmented lab environment to support monitoring, log generation, and detection testing.
 
 **Key Concepts:**
-- WAN / LAN / DMZ segmentation
-- Firewall rules and outbound NAT
-- DHCP and DNS resolver configuration
-- Client connectivity validation
-- Log generation for future SIEM ingestion
 
-📁 Project files:  
+- WAN / LAN / DMZ segmentation  
+- Firewall rule configuration  
+- Outbound NAT  
+- DHCP and DNS resolver setup  
+- Connectivity validation  
+- Controlled log generation for SIEM ingestion  
+
+📁 Location:  
 `projects/architecture/pfsense-homelab`
 
 ---
 
-## 🔍 How to Use This Repository
+## 🔍 Documentation Approach
 
-Each project directory includes:
-- A clear purpose and threat model
-- Architecture or topology diagrams (when applicable)
-- Configuration screenshots
-- Verification steps and outputs
-- Notes explaining security relevance
+Each project includes:
+
+- A clear objective  
+- Implementation steps  
+- Validation screenshots  
+- Investigation notes  
+- Troubleshooting breakdown (when applicable)  
+
+The goal is not only to configure tools, but to understand how security events are generated, observed, and investigated.
 
 ---
 
 ## 🎯 Career Objective
 
-Aspiring SOC Analyst seeking to apply hands-on security monitoring, investigation, and incident response skills in a professional environment.
+Aspiring SOC Analyst focused on developing strong foundational skills in:
+
+- Security monitoring  
+- Event analysis  
+- Detection validation  
+- Incident investigation  
 
 Certifications:
 - CompTIA Network+
@@ -55,9 +80,6 @@ Certifications:
 
 ---
 
-## 📌 Notes
-
-This repository emphasizes **understanding and investigation**, not just configuration.  
-Each lab is designed to answer the question:
-
-> *“What would a SOC analyst observe, investigate, and report?”*
+> This portfolio emphasizes practical understanding over theory.  
+> Every lab is built to answer the question:  
+> **“What would a SOC analyst see, investigate, and validate?”**

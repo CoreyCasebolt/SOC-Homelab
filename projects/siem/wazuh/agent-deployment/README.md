@@ -10,3 +10,4 @@ The purpose of this section is to:
 Current deployments:
 - `windows10/` – Wazuh agent deployment to a Windows 10 endpoint
 - `dc01/` – Wazuh agent deployment to a Windows Server domain controller
+- `ubuntu-desktop/` – Wazuh agent deployment to a Ubuntu Desktop endpoint

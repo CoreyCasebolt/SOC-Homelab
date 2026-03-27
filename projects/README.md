@@ -22,6 +22,9 @@ Lab design, network layout, and environment documentation.
 ### `endpoints/`
 Endpoint configuration, validation, and log generation.
 
+### `labs/`
+Hands-on projects documenting deployments, integrations, attack simulations, investigations, and validation work across the homelab.
+
 ### `nsm-ids/`
 Network security monitoring and intrusion detection work.
 

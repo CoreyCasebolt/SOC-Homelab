@@ -1,3 +1,5 @@
+> **Update:** I later moved pfSense log forwarding to my monitored `dvwa-server` host for a cleaner architecture and better correlation with DVWA web logs. See: [`../pfsense-log-forwarding-to-dvwa/`](../pfsense-log-forwarding-to-dvwa/)
+
 # pfSense Remote Log Forwarding to Wazuh Server
 
 ## Overview
